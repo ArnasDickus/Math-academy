@@ -1,3 +1,5 @@
 export enum Allroutes {
-  MATH = 'math'
+  HOME = '',
+  MATH = 'math',
+  BASIC = 'basic'
 }
