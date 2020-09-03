@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {EarlyMathComponent} from "./pages/early-math/early-math.component";
+import { EarlyMathComponent } from "./pages/early-math/early-math.component";
+import { Allroutes } from "../../core/enums/allroutes.enum";
 
 const routes: Routes = [
   {
-    path: '',
+    path: Allroutes.BASIC,
     component: EarlyMathComponent
   }
 ];
