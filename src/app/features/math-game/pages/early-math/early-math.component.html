@@ -1,9 +1,9 @@
-<form [formGroup]="form">
-  {{ value1 }} + {{ value2 }} = <input formControlName="answer" />
-</form>
+<div class="early-math">
+    <form class="early-math__form" [formGroup]="form">
+      <div class="early-math__equation">{{ value1 }} + {{ value2 }} = <input appAnswerHighlight class="early-math__input" formControlName="answer" /> </div>
+    </form>
 
-<hr>
-
-<div>Form is valid: {{form.valid }}</div>
-<div>Form values {{form.value | json }}</div>
-<div> Form errors: {{form.errors | json }}</div>
+    <div class="early-math__stats">
+      <p> Statistics {{ secondsPerSolution | number: '1.1-3' }} </p>
+    </div>
+</div>
